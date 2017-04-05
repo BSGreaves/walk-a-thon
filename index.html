@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Music City Walk-a-Thon</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css">
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<nav class="text-center navbar navbar-default header">
+			<h1>Music City<br> Walk-a-Thon</h1>
+			<h3>Join our generous donors and pledge your support today!</h3>
+		</nav>
+		<div class="container padding-top">
+			<div class="row">
+				<div class="col-md-8 col-sm-8" id="donorDisplay">
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<form>
+						<div class="form-group">
+							<label for="name">Name</label>
+							<input type="name" class="form-control" id="name" placeholder="Name">
+						</div>
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="email" class="form-control" id="email" placeholder="Email">
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="donationOption" id="oneTime" value="oneTime" checked>
+								One-time Donation
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="donationOption" id="perLap" value="perLap">
+								Per Lap
+							</label>
+						</div>
+						<div class="form-group">
+							<label for="amount">Donation Amount</label>
+							<input type="number" class="form-control" id="amount" placeholder="Donation Amount">
+						</div>
+						<button type="button" class="btn btn-default" id="donateBtn">Pledge!</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script src="dom.js"></script>
+		<script src="donors.js"></script>
+	</body>
+</html>
